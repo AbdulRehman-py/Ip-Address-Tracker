@@ -13,6 +13,8 @@ const Nav = ({buttonIcon, onSearch}) => {
     if (validateIpAddress(ipAddress)) {
 
       onSearch(ipAddress);
+      setIpAddress('');
+      
     } else {
       alert('Invalid IP address');
 
@@ -32,7 +34,7 @@ const Nav = ({buttonIcon, onSearch}) => {
       <h1>Ip Address Tracker</h1>
       <div className="input-button">
         <form >
-          <input value={ipAddress} onChange={(e)=> {setIpAddress(e.target.value)}} type="text" placeholder="Search for any IP address or domain" />
+          <input  value={ipAddress} onChange={(e)=> {setIpAddress(e.target.value)}} type="text" placeholder="Search for any IP address or domain" />
         </form>
         <button onClick={handleSubmit} type="submit">{buttonIcon}</button>
         
