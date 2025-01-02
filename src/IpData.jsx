@@ -1,23 +1,23 @@
-import "./Ipdata.css";
+import './Ipdata.css';
 
-const Ipdata = () => {
+const Ipdata = ({ ip, city, timezone, org }) => {
   return (
     <div id="ipdata-container">
       <div className="data">
-        <h3>Ip address</h3>
-        <span>{"192.100.198"}</span>
+        <h3>IP Address</h3>
+        <span>{ip}</span>
       </div>
       <div className="data">
         <h3>Location</h3>
-        <span>{"New York, NY 10001"}</span>
+        <span>{city}</span>
       </div>
       <div className="data">
         <h3>Timezone</h3>
-        <span>{"UTC -05:00"}</span>
+        <span>{timezone}</span>
       </div>
       <div className="data">
-        <h3>Isp</h3>
-        <span>{"SpaceX Starlink"}</span>
+        <h3>ISP</h3>
+        <span>{org}</span>
       </div>
     </div>
   );

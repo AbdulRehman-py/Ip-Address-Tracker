@@ -35,7 +35,7 @@ form input {
 }
 
    button {
-  padding: 1rem 1rem 1rem 1rem;
+  padding: 1rem 1rem 0.9rem 1rem;
   border-radius: 12px;
   border: none;
   outline: none;
@@ -43,8 +43,9 @@ form input {
   border-bottom-left-radius: 0%;
   background-color: black;
   margin: 0;
-  margin-left: 10px;
+  margin-left: 1.2rem;
   outline: none;
+  overflow: hidden;
 
 }
 
@@ -68,4 +69,22 @@ form input {
 #nav h1 {
   color: white;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+
+#ipdata-container {
+  position: absolute;
+  z-index: 2; /* Ensure it is above the map */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+}
+
+#map-container {
+  position: relative;
+  z-index: 1; /* Ensure it is below the Ipdata component */
+}
+
+#map {
+  height: 400px;
+  width: 100%;
 }
