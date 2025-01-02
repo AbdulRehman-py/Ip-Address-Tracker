@@ -7,7 +7,7 @@
   background-image: url("/images/pattern-bg-desktop.png");
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 2rem 0 4rem 0;
+  padding: 2rem 0 6rem 0;
 
 }
 
@@ -63,4 +63,9 @@ form input {
   .input-button {
     width: 70%;
   }
+}
+
+#nav h1 {
+  color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }

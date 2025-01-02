@@ -1,0 +1,32 @@
+/* Styling for the table container */
+#ipdata-container {
+    margin-left: 5rem;
+    margin-top: -3.5rem;
+    width: 80%;
+    border-radius: 12px;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem 1rem 1rem 1rem; 
+  }
+  
+.data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid lightgray;
+    padding-right: 3rem;
+   
+
+}
+
+.data:last-of-type{
+  border: none;
+}
+
+.data h3 {
+   font-size: 1rem;
+    margin-bottom: 2rem;
+    
+}
