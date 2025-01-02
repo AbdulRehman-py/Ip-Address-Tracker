@@ -1,4 +1,4 @@
-import './Ipdata.css';
+import './ipdata.css';
 
 const Ipdata = ({ ip, city, timezone, org }) => {
   return (
