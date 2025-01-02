@@ -1,0 +1,101 @@
+/* Ensure the input element takes the full width */
+#nav {
+  width: 100%;
+ display: flex;
+ flex-direction: column;
+  align-items: center;
+  background-image: url("/images/pattern-bg-desktop.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 2rem 0 8rem 0;
+
+}
+
+
+
+form {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+form input {
+  width: 100%;
+  max-width: 100%;
+  padding: 1rem 1rem 1rem 1rem;
+  background-color: white;
+  border-radius: 12px;
+  margin: 0;
+  border: none;
+  outline: none;
+  border-top-right-radius: 0%;
+  border-bottom-right-radius: 0%;
+  
+}
+
+   button {
+  padding: 1rem 1rem 0.9rem 1rem;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  border-top-left-radius: 0%;
+  border-bottom-left-radius: 0%;
+  background-color: black;
+  margin: 0;
+  
+  outline: none;
+  overflow: hidden;
+
+}
+
+.input-button {
+  display: flex;
+  width: 30%;
+}
+
+@media (max-width: 938px) {
+  .input-button {
+    width: 50%;
+  }
+}
+
+@media (max-width: 565px) {
+  .input-button {
+    width: 70%;
+  }
+}
+
+#nav h1 {
+  color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+
+#ipdata-container {
+  position: absolute;
+  z-index: 2; /* Ensure it is above the map */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+}
+
+#map-container {
+  position: relative;
+  z-index: 1; /* Ensure it is below the Ipdata component */
+}
+
+#map {
+  height: 400px;
+  width: 100%;
+}
+
+@media (max-width: 670px) {
+  #map {
+    height: 300px;
+  }
+  #nav {
+    padding: 1rem 0 8rem 0;
+  }
+}
