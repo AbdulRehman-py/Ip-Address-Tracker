@@ -7,7 +7,7 @@
   background-image: url("/images/pattern-bg-desktop.png");
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 2rem 0 6rem 0;
+  padding: 2rem 0 8rem 0;
 
 }
 
@@ -31,6 +31,8 @@ form input {
   margin: 0;
   border: none;
   outline: none;
+  border-top-right-radius: 0%;
+  border-bottom-right-radius: 0%;
   
 }
 
@@ -43,7 +45,7 @@ form input {
   border-bottom-left-radius: 0%;
   background-color: black;
   margin: 0;
-  margin-left: 1.2rem;
+  
   outline: none;
   overflow: hidden;
 
@@ -87,4 +89,13 @@ form input {
 #map {
   height: 400px;
   width: 100%;
+}
+
+@media (max-width: 670px) {
+  #map {
+    height: 300px;
+  }
+  #nav {
+    padding: 1rem 0 8rem 0;
+  }
 }
