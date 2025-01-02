@@ -1,4 +1,4 @@
-import Nav from './nav.jsx';
+import Nav from './Nav.jsx';
 import Ipdata from './IpData.jsx';
 import Map from './Map.jsx';
 import { useState, useEffect } from 'react';
